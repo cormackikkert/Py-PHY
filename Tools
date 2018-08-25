@@ -1,0 +1,13 @@
+import time
+median=lambda *v,s=sorted,l=len:s(v)[~-l(v)//2]+s(v)[l(v)//2]*(1-l(v)%2)/(2-l(v)%2)
+
+def profiler(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        keys = ', '.join(['{}={}'.format(value, kwargs[value]) for value in kwargs])
+        print('{}({}): {}'.format(func.__name__, ', '.join(args), end-start))
+        return result
+    return wrapper
+
