@@ -1,6 +1,6 @@
 PyPHY - A 3D physics sandbox I built from scrath using pygame.
 
-I made this with less then a year of python experience so there are many 'interesting' ways I do things.
+I made this with less then a year of python experience so there are many 'interesting' ways I do things... Sorry.
 
 Dependencies
 
