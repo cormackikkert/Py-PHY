@@ -62,9 +62,9 @@ class Vector3d:
             self.y *= scalar.y
             self.z *= scalar.z
         else:
-            self.x * scalar
-            self.y * scalar
-            self.z * scalar
+            self.x *= scalar
+            self.y *= scalar
+            self.z *= scalar
 
     def crossProduct(self, vect1):
         # sets itself to a vector perpendicular to itself and vect1 (itself and vect1 need to be normalised)
